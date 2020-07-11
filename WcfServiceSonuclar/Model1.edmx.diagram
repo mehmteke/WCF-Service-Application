@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="faca31cd79064194aba10e5cf69f825b" Name="Diagram1" ZoomLevel="67">
+        <EntityTypeShape EntityType="SinavSonuclariModel.Ogrenciler" Width="1.5" PointX="4.375" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SinavSonuclariModel.Sonuclar" Width="1.5" PointX="8.375" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="SinavSonuclariModel.Turler" Width="1.5" PointX="11.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SinavSonuclariModel.Yillar" Width="1.5" PointX="5" PointY="4.625" IsExpanded="true" />
+        <AssociationConnector Association="SinavSonuclariModel.FK__Sonuclar__Ogrenc__173876EA" ManuallyRouted="false" />
+        <AssociationConnector Association="SinavSonuclariModel.FK__Sonuclar__TurId__182C9B23" ManuallyRouted="false" />
+        <AssociationConnector Association="SinavSonuclariModel.FK__Sonuclar__YilId__1920BF5C" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

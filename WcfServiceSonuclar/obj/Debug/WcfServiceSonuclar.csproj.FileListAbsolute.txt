@@ -1,0 +1,7 @@
+C:\Users\MEHMTEKE\Source\Repos\WcfServiceSinavSonuclari\WcfServiceSonuclar\bin\WcfServiceSonuclar.dll.config
+C:\Users\MEHMTEKE\Source\Repos\WcfServiceSinavSonuclari\WcfServiceSonuclar\bin\WcfServiceSonuclar.dll
+C:\Users\MEHMTEKE\Source\Repos\WcfServiceSinavSonuclari\WcfServiceSonuclar\bin\WcfServiceSonuclar.pdb
+C:\Users\MEHMTEKE\Source\Repos\WcfServiceSinavSonuclari\WcfServiceSonuclar\obj\Debug\WcfServiceSonuclar.csprojAssemblyReference.cache
+C:\Users\MEHMTEKE\Source\Repos\WcfServiceSinavSonuclari\WcfServiceSonuclar\obj\Debug\WcfServiceSonuclar.csproj.CoreCompileInputs.cache
+C:\Users\MEHMTEKE\Source\Repos\WcfServiceSinavSonuclari\WcfServiceSonuclar\obj\Debug\WcfServiceSonuclar.dll
+C:\Users\MEHMTEKE\Source\Repos\WcfServiceSinavSonuclari\WcfServiceSonuclar\obj\Debug\WcfServiceSonuclar.pdb
