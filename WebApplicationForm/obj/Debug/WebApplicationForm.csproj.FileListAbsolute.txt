@@ -57,3 +57,10 @@ C:\Users\MEHMTEKE\Source\Repos\WcfServiceSinavSonuclari\WebApplicationForm\obj\D
 C:\Users\MEHMTEKE\Source\Repos\WcfServiceSinavSonuclari\WebApplicationForm\obj\Debug\WebApplicationForm.csproj.CopyComplete
 C:\Users\MEHMTEKE\Source\Repos\WcfServiceSinavSonuclari\WebApplicationForm\obj\Debug\WebApplicationForm.dll
 C:\Users\MEHMTEKE\Source\Repos\WcfServiceSinavSonuclari\WebApplicationForm\obj\Debug\WebApplicationForm.pdb
+C:\Users\MEHMTEKE\Source\Repos\WcfServiceSinavSonuclari\WebApplicationForm\bin\WcfServiceSonuclar.dll
+C:\Users\MEHMTEKE\Source\Repos\WcfServiceSinavSonuclari\WebApplicationForm\bin\EntityFramework.dll
+C:\Users\MEHMTEKE\Source\Repos\WcfServiceSinavSonuclari\WebApplicationForm\bin\WcfServiceSonuclar.pdb
+C:\Users\MEHMTEKE\Source\Repos\WcfServiceSinavSonuclari\WebApplicationForm\bin\WcfServiceSonuclar.dll.config
+C:\Users\MEHMTEKE\Source\Repos\WcfServiceSinavSonuclari\WebApplicationForm\bin\EntityFramework.xml
+C:\Users\MEHMTEKE\Source\Repos\WcfServiceSinavSonuclari\WebApplicationForm\bin\EntityFramework.SqlServer.dll
+C:\Users\MEHMTEKE\Source\Repos\WcfServiceSinavSonuclari\WebApplicationForm\bin\EntityFramework.SqlServer.xml
