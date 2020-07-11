@@ -15,7 +15,12 @@ namespace WebApplicationForm
         Service1 service1 = new Service1();
         protected void Page_Load(object sender, EventArgs e)
         {
-            service1.GetOgrencilers();
+            if (!IsPostBack)
+            {
+                ddlOgrenciler.DataSource = service1.GetOgrencilers();
+                ddlTurler.DataSource = service1.GetTurlers();
+                ddlYillar.DataSource = service1.GetYillars();
+            } 
         }
     }
 }
