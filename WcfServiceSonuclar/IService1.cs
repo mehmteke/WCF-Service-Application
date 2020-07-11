@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
@@ -12,7 +13,14 @@ namespace WcfServiceSonuclar
     [ServiceContract]
     public interface IService1
     {
-        
+        [OperationContract]
+        List<Yillar> GetYillars();
+
+        [OperationContract]
+        List<Turler> GetTurlers();
+
+        [OperationContract]
+        List<Ogrenciler> GetOgrencilers();
     }
 
 }
