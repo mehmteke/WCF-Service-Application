@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SinavSonuclariModelStoreContainer" CdmEntityContainer="SinavSonuclariEntities">
+    <EntitySetMapping Name="Ogrenciler">
+      <EntityTypeMapping TypeName="SinavSonuclariModel.Ogrenciler">
+        <MappingFragment StoreEntitySet="Ogrenciler">
+          <ScalarProperty Name="OgrenciId" ColumnName="OgrenciId" />
+          <ScalarProperty Name="OngrenciTckn" ColumnName="OngrenciTckn" />
+          <ScalarProperty Name="OgrenciAd" ColumnName="OgrenciAd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sonuclar">
+      <EntityTypeMapping TypeName="SinavSonuclariModel.Sonuclar">
+        <MappingFragment StoreEntitySet="Sonuclar">
+          <ScalarProperty Name="SonucId" ColumnName="SonucId" />
+          <ScalarProperty Name="OgrenciId" ColumnName="OgrenciId" />
+          <ScalarProperty Name="TurId" ColumnName="TurId" />
+          <ScalarProperty Name="YilId" ColumnName="YilId" />
+          <ScalarProperty Name="Sonuc" ColumnName="Sonuc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Turler">
+      <EntityTypeMapping TypeName="SinavSonuclariModel.Turler">
+        <MappingFragment StoreEntitySet="Turler">
+          <ScalarProperty Name="TurId" ColumnName="TurId" />
+          <ScalarProperty Name="TurAd" ColumnName="TurAd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Yillar">
+      <EntityTypeMapping TypeName="SinavSonuclariModel.Yillar">
+        <MappingFragment StoreEntitySet="Yillar">
+          <ScalarProperty Name="YilId" ColumnName="YilId" />
+          <ScalarProperty Name="YilAdi" ColumnName="YilAdi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

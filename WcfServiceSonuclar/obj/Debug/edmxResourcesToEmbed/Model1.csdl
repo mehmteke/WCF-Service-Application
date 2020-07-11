@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SinavSonuclariModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Ogrenciler">
+    <Key>
+      <PropertyRef Name="OgrenciId" />
+    </Key>
+    <Property Name="OgrenciId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OngrenciTckn" Type="Int32" />
+    <Property Name="OgrenciAd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Sonuclar" Relationship="Self.FK__Sonuclar__Ogrenc__173876EA" FromRole="Ogrenciler" ToRole="Sonuclar" />
+  </EntityType>
+  <EntityType Name="Sonuclar">
+    <Key>
+      <PropertyRef Name="SonucId" />
+    </Key>
+    <Property Name="SonucId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OgrenciId" Type="Int32" />
+    <Property Name="TurId" Type="Int32" />
+    <Property Name="YilId" Type="Int32" />
+    <Property Name="Sonuc" Type="Int32" />
+    <NavigationProperty Name="Ogrenciler" Relationship="Self.FK__Sonuclar__Ogrenc__173876EA" FromRole="Sonuclar" ToRole="Ogrenciler" />
+    <NavigationProperty Name="Turler" Relationship="Self.FK__Sonuclar__TurId__182C9B23" FromRole="Sonuclar" ToRole="Turler" />
+    <NavigationProperty Name="Yillar" Relationship="Self.FK__Sonuclar__YilId__1920BF5C" FromRole="Sonuclar" ToRole="Yillar" />
+  </EntityType>
+  <EntityType Name="Turler">
+    <Key>
+      <PropertyRef Name="TurId" />
+    </Key>
+    <Property Name="TurId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TurAd" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="Sonuclar" Relationship="Self.FK__Sonuclar__TurId__182C9B23" FromRole="Turler" ToRole="Sonuclar" />
+  </EntityType>
+  <EntityType Name="Yillar">
+    <Key>
+      <PropertyRef Name="YilId" />
+    </Key>
+    <Property Name="YilId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="YilAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Sonuclar" Relationship="Self.FK__Sonuclar__YilId__1920BF5C" FromRole="Yillar" ToRole="Sonuclar" />
+  </EntityType>
+  <Association Name="FK__Sonuclar__Ogrenc__173876EA">
+    <End Role="Ogrenciler" Type="Self.Ogrenciler" Multiplicity="0..1" />
+    <End Role="Sonuclar" Type="Self.Sonuclar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ogrenciler">
+        <PropertyRef Name="OgrenciId" />
+      </Principal>
+      <Dependent Role="Sonuclar">
+        <PropertyRef Name="OgrenciId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Sonuclar__TurId__182C9B23">
+    <End Role="Turler" Type="Self.Turler" Multiplicity="0..1" />
+    <End Role="Sonuclar" Type="Self.Sonuclar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Turler">
+        <PropertyRef Name="TurId" />
+      </Principal>
+      <Dependent Role="Sonuclar">
+        <PropertyRef Name="TurId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Sonuclar__YilId__1920BF5C">
+    <End Role="Yillar" Type="Self.Yillar" Multiplicity="0..1" />
+    <End Role="Sonuclar" Type="Self.Sonuclar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Yillar">
+        <PropertyRef Name="YilId" />
+      </Principal>
+      <Dependent Role="Sonuclar">
+        <PropertyRef Name="YilId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SinavSonuclariEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Ogrenciler" EntityType="Self.Ogrenciler" />
+    <EntitySet Name="Sonuclar" EntityType="Self.Sonuclar" />
+    <EntitySet Name="Turler" EntityType="Self.Turler" />
+    <EntitySet Name="Yillar" EntityType="Self.Yillar" />
+    <AssociationSet Name="FK__Sonuclar__Ogrenc__173876EA" Association="Self.FK__Sonuclar__Ogrenc__173876EA">
+      <End Role="Ogrenciler" EntitySet="Ogrenciler" />
+      <End Role="Sonuclar" EntitySet="Sonuclar" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Sonuclar__TurId__182C9B23" Association="Self.FK__Sonuclar__TurId__182C9B23">
+      <End Role="Turler" EntitySet="Turler" />
+      <End Role="Sonuclar" EntitySet="Sonuclar" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Sonuclar__YilId__1920BF5C" Association="Self.FK__Sonuclar__YilId__1920BF5C">
+      <End Role="Yillar" EntitySet="Yillar" />
+      <End Role="Sonuclar" EntitySet="Sonuclar" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
